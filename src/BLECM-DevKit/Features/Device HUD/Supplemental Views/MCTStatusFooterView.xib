@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MCTStatusFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_circle_orange" translatesAutoresizingMaskIntoConstraints="NO" id="J85-Gp-A9W">
+                    <rect key="frame" x="15" y="14" width="10" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="HQi-aW-zjk"/>
+                        <constraint firstAttribute="width" constant="10" id="yYM-HU-6Ey"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connection Error" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N14-6H-kmW">
+                    <rect key="frame" x="33" y="9" width="272" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_circle_orange" translatesAutoresizingMaskIntoConstraints="NO" id="niI-CU-dQL">
+                    <rect key="frame" x="15" y="53" width="10" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="9tF-i8-L54"/>
+                        <constraint firstAttribute="width" constant="10" id="XLb-sL-QIh"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connection Error" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7D1-B1-2Ht">
+                    <rect key="frame" x="33" y="32" width="272" height="51"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="niI-CU-dQL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="0t6-KZ-3TW"/>
+                <constraint firstAttribute="bottom" secondItem="niI-CU-dQL" secondAttribute="bottom" constant="33" id="0zW-7K-iYw"/>
+                <constraint firstItem="N14-6H-kmW" firstAttribute="centerY" secondItem="J85-Gp-A9W" secondAttribute="centerY" constant="0.5" id="3yN-6m-4b2"/>
+                <constraint firstItem="7D1-B1-2Ht" firstAttribute="leading" secondItem="niI-CU-dQL" secondAttribute="trailing" constant="8" id="H05-bw-Kr7"/>
+                <constraint firstItem="J85-Gp-A9W" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="Hr8-gL-zFu"/>
+                <constraint firstAttribute="bottom" secondItem="7D1-B1-2Ht" secondAttribute="bottom" constant="13" id="Ros-Zb-w89"/>
+                <constraint firstAttribute="trailing" secondItem="7D1-B1-2Ht" secondAttribute="trailing" constant="15" id="YO5-JQ-x6n"/>
+                <constraint firstItem="7D1-B1-2Ht" firstAttribute="centerY" secondItem="niI-CU-dQL" secondAttribute="centerY" constant="-0.5" id="dhI-Ac-aaz"/>
+                <constraint firstItem="N14-6H-kmW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="9" id="e3K-vF-Dcz"/>
+                <constraint firstItem="N14-6H-kmW" firstAttribute="leading" secondItem="J85-Gp-A9W" secondAttribute="trailing" constant="8" id="gh6-H0-2CH"/>
+                <constraint firstAttribute="trailing" secondItem="N14-6H-kmW" secondAttribute="trailing" constant="15" id="kQp-Y0-q4e"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bluetoothImage" destination="niI-CU-dQL" id="Sbb-t5-DMM"/>
+                <outlet property="bluetoothLabel" destination="7D1-B1-2Ht" id="afd-1G-7Qu"/>
+                <outlet property="serverImage" destination="J85-Gp-A9W" id="003-6W-uiT"/>
+                <outlet property="serverLabel" destination="N14-6H-kmW" id="Vqi-VF-Uwp"/>
+            </connections>
+            <point key="canvasLocation" x="198" y="316"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img_circle_orange" width="10" height="10"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

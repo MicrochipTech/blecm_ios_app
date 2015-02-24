@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="1ik-jx-LcA" customClass="MCTDevicePotentiometerCell">
+            <rect key="frame" x="0.0" y="0.0" width="413" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1ik-jx-LcA" id="Dqk-NH-58e">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xnP-mj-afr">
+                        <rect key="frame" x="15" y="14" width="320" height="15"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_bar_empty" translatesAutoresizingMaskIntoConstraints="NO" id="qFC-J7-YiW">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="15"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_bar_full" translatesAutoresizingMaskIntoConstraints="NO" id="QJL-JX-ebV">
+                                <rect key="frame" x="0.0" y="0.0" width="230" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="wqA-pC-t8s"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="QJL-JX-ebV" secondAttribute="bottom" id="1Qo-4z-WOc"/>
+                            <constraint firstItem="QJL-JX-ebV" firstAttribute="leading" secondItem="xnP-mj-afr" secondAttribute="leading" id="9bO-Pc-pi5"/>
+                            <constraint firstAttribute="trailing" secondItem="qFC-J7-YiW" secondAttribute="trailing" id="As5-lW-EWm"/>
+                            <constraint firstItem="qFC-J7-YiW" firstAttribute="leading" secondItem="xnP-mj-afr" secondAttribute="leading" id="I0U-r2-yl1"/>
+                            <constraint firstItem="QJL-JX-ebV" firstAttribute="top" secondItem="xnP-mj-afr" secondAttribute="top" id="SEv-ZM-xdt"/>
+                            <constraint firstAttribute="trailing" secondItem="qFC-J7-YiW" secondAttribute="trailing" id="TIX-5R-6R4"/>
+                            <constraint firstItem="qFC-J7-YiW" firstAttribute="width" secondItem="xnP-mj-afr" secondAttribute="width" id="TJ4-DK-wDB"/>
+                            <constraint firstAttribute="bottom" secondItem="qFC-J7-YiW" secondAttribute="bottom" id="dEW-dL-1oB"/>
+                            <constraint firstItem="QJL-JX-ebV" firstAttribute="leading" secondItem="xnP-mj-afr" secondAttribute="leading" id="iCM-Wu-n8K"/>
+                            <constraint firstItem="qFC-J7-YiW" firstAttribute="leading" secondItem="xnP-mj-afr" secondAttribute="leading" id="mQY-xd-bi6"/>
+                            <constraint firstItem="qFC-J7-YiW" firstAttribute="top" secondItem="xnP-mj-afr" secondAttribute="top" id="p2S-xV-RWx"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1023" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEj-IF-5nJ">
+                        <rect key="frame" x="345" y="11" width="50" height="20.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" priority="999" constant="50" id="d1o-XL-4aZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="xnP-mj-afr" secondAttribute="centerY" id="Ff9-8M-19P"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="GEj-IF-5nJ" secondAttribute="trailing" constant="10" id="Xxb-IH-lQu"/>
+                    <constraint firstItem="xnP-mj-afr" firstAttribute="leading" secondItem="Dqk-NH-58e" secondAttribute="leading" constant="15" id="YdJ-kZ-PXU"/>
+                    <constraint firstItem="GEj-IF-5nJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Dqk-NH-58e" secondAttribute="leading" constant="15" id="lhC-Mk-b27"/>
+                    <constraint firstItem="GEj-IF-5nJ" firstAttribute="leading" secondItem="xnP-mj-afr" secondAttribute="trailing" constant="10" id="qbW-tM-bId"/>
+                    <constraint firstAttribute="centerY" secondItem="GEj-IF-5nJ" secondAttribute="centerY" id="w70-W7-0Pq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="meterBackgroundImageView" destination="qFC-J7-YiW" id="7yF-iV-G7K"/>
+                <outlet property="meterContainerView" destination="xnP-mj-afr" id="HAv-p3-gTQ"/>
+                <outlet property="meterFillImageView" destination="QJL-JX-ebV" id="LEa-BF-Tfz"/>
+                <outlet property="meterFillWidthConstraint" destination="wqA-pC-t8s" id="AXl-tr-Gje"/>
+                <outlet property="meterLabel" destination="GEj-IF-5nJ" id="dgG-Sh-t0f"/>
+                <outletCollection property="removableConstraints" destination="qbW-tM-bId" id="Q5M-0R-Y4T"/>
+                <outletCollection property="removableConstraints" destination="Xxb-IH-lQu" id="Pqf-Si-ze7"/>
+            </connections>
+            <point key="canvasLocation" x="283.5" y="300"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="img_bar_empty" width="230" height="15"/>
+        <image name="img_bar_full" width="11" height="15"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

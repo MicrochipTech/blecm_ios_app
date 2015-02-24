@@ -1,0 +1,783 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2848CD941A65CA0800BC01F5 /* MCTNoPeripheralsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2848CD921A65CA0800BC01F5 /* MCTNoPeripheralsCell.m */; };
+		2848CD951A65CA0800BC01F5 /* MCTNoPeripheralsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2848CD931A65CA0800BC01F5 /* MCTNoPeripheralsCell.xib */; };
+		2848CD9A1A66F1FC00BC01F5 /* MCTSettingsHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2848CD991A66F1FC00BC01F5 /* MCTSettingsHeaderView.m */; };
+		2848CD9C1A66F20F00BC01F5 /* MCTSettingsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2848CD9B1A66F20F00BC01F5 /* MCTSettingsHeaderView.xib */; };
+		2880031D1A64816200E878A7 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2880031C1A64816200E878A7 /* Launch Screen.xib */; };
+		28C57AA51A5B3807008C7444 /* MCTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C57AA41A5B3807008C7444 /* MCTAppDelegate.m */; };
+		28C57AAD1A5B3807008C7444 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28C57AAC1A5B3807008C7444 /* Images.xcassets */; };
+		28C57ABC1A5B3807008C7444 /* BLECM_DevKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C57ABB1A5B3807008C7444 /* BLECM_DevKitTests.m */; };
+		63293001F2CBAA51F6248D78 /* MCTConsoleMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 63293E9CE7B0CBFC666ECAF8 /* MCTConsoleMonitor.m */; };
+		63293017A20586406AE134C9 /* MCTConsoleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6329334C0B78F31515E53016 /* MCTConsoleCell.xib */; };
+		63293018EB60EF87CA55A943 /* MCTSettingsFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63293521EAA2B58B2F2B8806 /* MCTSettingsFieldCell.xib */; };
+		632930C6A1AEF4020204C02F /* MCTSettingsSwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 632931EB0E0F4AEBD73D881D /* MCTSettingsSwitchCell.xib */; };
+		632931ECB1130158A73ABDA4 /* MCTAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 63293DE698DE33F2514052EE /* MCTAppearance.m */; };
+		63293208C480A71A23A3AB0C /* MCTDevicePotentiometerHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 632934420652A35FE90B793B /* MCTDevicePotentiometerHeaderView.xib */; };
+		632932A1E07604A903D7FEFA /* device.json in Resources */ = {isa = PBXBuildFile; fileRef = 63293DE2E29911ECA9229673 /* device.json */; };
+		632932FA1E2E4CBA3140A766 /* MCTDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 6329314FECD94A208A87EDD0 /* MCTDevice.m */; };
+		632933F3F5FEEC7C06AAD1DC /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63293405E8D8E21F583A39EE /* Storyboard.storyboard */; };
+		632933F418620DC735EC7817 /* MCTDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6329361CA5DCC5DD1ABC95BE /* MCTDrawerViewController.m */; };
+		63293410DD8554DCEFDAC8F7 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 63293C61C0FEB111B0E116FD /* Reachability.m */; };
+		63293477F9C44AFB3AD9EADD /* MCTSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63293005F0B855555CF5CE51 /* MCTSettingsViewController.m */; };
+		632934BA872373B5B156F567 /* MCTDevicePotentiometerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 632939AADD4C5D29C5603203 /* MCTDevicePotentiometerCell.xib */; };
+		63293589A1F06EDD27A45CED /* MCTSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 63293949D8A6CF99E296695C /* MCTSession.m */; };
+		63293621E6502CD19158C55E /* MCTDeviceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6329340F9D4963E3022A2440 /* MCTDeviceCell.m */; };
+		6329368E9DE7BBD326A6C9B5 /* UIFont+Microchip.m in Sources */ = {isa = PBXBuildFile; fileRef = 632936BEBE4D9B3EA46CAF7D /* UIFont+Microchip.m */; };
+		632936E811F52DFC1A6C1D02 /* MCTStatusFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6329366C4D0338D173A1E7A0 /* MCTStatusFooterView.m */; };
+		6329382014283300721D29BB /* MCTConsoleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63293ABAEE5A905A5908505E /* MCTConsoleViewController.m */; };
+		6329387185995242E0847EDB /* MCTBluetoothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 632937F12451AC921FCF8F8D /* MCTBluetoothManager.m */; };
+		6329393856FD562E498C4391 /* MCTDeviceButtonLEDCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 632933118ABCBAF5D00639F8 /* MCTDeviceButtonLEDCell.m */; };
+		6329394684CCF8E21BD1EAFF /* MCTDeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6329304921118C35CBDC7864 /* MCTDeviceManager.m */; };
+		632939733D17599045FEA7F6 /* MCTAttributionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63293E4A98E6FA6557BCBBCE /* MCTAttributionView.m */; };
+		632939CA5F2DF68E41AB8660 /* MCTDevicePotentiometerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63293BB685E66C2487A6E7E3 /* MCTDevicePotentiometerCell.m */; };
+		632939ECD4DCAD14F56763F8 /* MCTCharacteristic.m in Sources */ = {isa = PBXBuildFile; fileRef = 63293B936E0FB55E8D366B58 /* MCTCharacteristic.m */; };
+		63293A2B31543796C9966E1E /* MCTDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63293BDA5B3F2ACA404EEB7D /* MCTDeviceViewController.m */; };
+		63293A5B11FF49DCDBFEE4EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63293955D535C1F312CD0B6B /* main.m */; };
+		63293AF3C1397B1D16C2FE31 /* UIView+Microchip.m in Sources */ = {isa = PBXBuildFile; fileRef = 63293C7DB9C4F3193AB77D1D /* UIView+Microchip.m */; };
+		63293B28900295276A59C327 /* MCTSettingsSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 632937145D8CF1520343D6F9 /* MCTSettingsSwitchCell.m */; };
+		63293B33789909FD347EE39F /* MCTSettingsFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63293994A0A888D15E825A62 /* MCTSettingsFieldCell.m */; };
+		63293BA1806BC351AC0D184F /* MCTAttributionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63293F2AE15C5ACD4A0F3832 /* MCTAttributionView.xib */; };
+		63293BDBA32640F3063EDF43 /* MCTDeviceButtonLEDHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63293D02C1C4B31DDB9AC375 /* MCTDeviceButtonLEDHeaderView.xib */; };
+		63293DCAF1B7D223C8B3F77F /* MCTRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 632938C7B0998D27BF58AFFD /* MCTRequest.m */; };
+		63293DEEDF3974B4F21B4919 /* MCTRequestSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = 63293507B881B2F8EE5C53F2 /* MCTRequestSummary.m */; };
+		63293DF672139826FD227354 /* MCTConsoleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63293B475C79AFFA4492A075 /* MCTConsoleCell.m */; };
+		63293E05F36BB6D0AB8C5187 /* NSData+Microchip.m in Sources */ = {isa = PBXBuildFile; fileRef = 63293403DB3E96D517F11D1B /* NSData+Microchip.m */; };
+		63293ED918FC55D97D1F26DE /* MCTDeviceHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63293AAC140671D875138DFA /* MCTDeviceHeaderView.m */; };
+		63293F32B4BAD0A634099FFA /* MCTStatusFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6329321E7B815D7F30D68866 /* MCTStatusFooterView.xib */; };
+		63293F4DDED30935AD293E0E /* MCTDeviceButtonLEDCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63293449E65636ADB2C49B3F /* MCTDeviceButtonLEDCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28C57AB61A5B3807008C7444 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28C57A941A5B3807008C7444 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28C57A9B1A5B3807008C7444;
+			remoteInfo = "BLECM-DevKit";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2848CD911A65CA0800BC01F5 /* MCTNoPeripheralsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTNoPeripheralsCell.h; sourceTree = "<group>"; };
+		2848CD921A65CA0800BC01F5 /* MCTNoPeripheralsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTNoPeripheralsCell.m; sourceTree = "<group>"; };
+		2848CD931A65CA0800BC01F5 /* MCTNoPeripheralsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MCTNoPeripheralsCell.xib; sourceTree = "<group>"; };
+		2848CD981A66F1FC00BC01F5 /* MCTSettingsHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCTSettingsHeaderView.h; path = "Supplemental Views/MCTSettingsHeaderView.h"; sourceTree = "<group>"; };
+		2848CD991A66F1FC00BC01F5 /* MCTSettingsHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCTSettingsHeaderView.m; path = "Supplemental Views/MCTSettingsHeaderView.m"; sourceTree = "<group>"; };
+		2848CD9B1A66F20F00BC01F5 /* MCTSettingsHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MCTSettingsHeaderView.xib; path = "Supplemental Views/MCTSettingsHeaderView.xib"; sourceTree = "<group>"; };
+		2880031C1A64816200E878A7 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
+		28C57A9C1A5B3807008C7444 /* BLECM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLECM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28C57AA01A5B3807008C7444 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28C57AA31A5B3807008C7444 /* MCTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCTAppDelegate.h; sourceTree = "<group>"; };
+		28C57AA41A5B3807008C7444 /* MCTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCTAppDelegate.m; sourceTree = "<group>"; };
+		28C57AAC1A5B3807008C7444 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		28C57AB51A5B3807008C7444 /* BLECM-DevKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BLECM-DevKitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28C57ABA1A5B3807008C7444 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28C57ABB1A5B3807008C7444 /* BLECM_DevKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLECM_DevKitTests.m; sourceTree = "<group>"; };
+		63293005F0B855555CF5CE51 /* MCTSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTSettingsViewController.m; sourceTree = "<group>"; };
+		6329304921118C35CBDC7864 /* MCTDeviceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTDeviceManager.m; sourceTree = "<group>"; };
+		63293106728AF04938E8FA31 /* MCTAttributionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTAttributionView.h; sourceTree = "<group>"; };
+		63293118D176A69E1727EACE /* MCTAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTAppearance.h; sourceTree = "<group>"; };
+		6329314FECD94A208A87EDD0 /* MCTDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTDevice.m; sourceTree = "<group>"; };
+		632931EB0E0F4AEBD73D881D /* MCTSettingsSwitchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MCTSettingsSwitchCell.xib; sourceTree = "<group>"; };
+		6329321E7B815D7F30D68866 /* MCTStatusFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MCTStatusFooterView.xib; sourceTree = "<group>"; };
+		63293232250F57485A4B00C6 /* MCTCharacteristic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTCharacteristic.h; sourceTree = "<group>"; };
+		63293243B5D3C9C53FC4B065 /* MCTDevicePotentiometerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTDevicePotentiometerCell.h; sourceTree = "<group>"; };
+		632932793FB7FB367C2FAE1D /* MCTDeviceButtonLEDCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTDeviceButtonLEDCell.h; sourceTree = "<group>"; };
+		632932A7C953F80EEF610B37 /* MCTDeviceHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTDeviceHeaderView.h; sourceTree = "<group>"; };
+		632933118ABCBAF5D00639F8 /* MCTDeviceButtonLEDCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTDeviceButtonLEDCell.m; sourceTree = "<group>"; };
+		6329334C0B78F31515E53016 /* MCTConsoleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MCTConsoleCell.xib; sourceTree = "<group>"; };
+		63293403DB3E96D517F11D1B /* NSData+Microchip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Microchip.m"; sourceTree = "<group>"; };
+		6329340F9D4963E3022A2440 /* MCTDeviceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTDeviceCell.m; sourceTree = "<group>"; };
+		6329341EF09A93735C619304 /* MCTDeviceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTDeviceCell.h; sourceTree = "<group>"; };
+		632934420652A35FE90B793B /* MCTDevicePotentiometerHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MCTDevicePotentiometerHeaderView.xib; sourceTree = "<group>"; };
+		63293449E65636ADB2C49B3F /* MCTDeviceButtonLEDCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MCTDeviceButtonLEDCell.xib; sourceTree = "<group>"; };
+		632934A331F55FFC96700614 /* MCTConsoleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTConsoleCell.h; sourceTree = "<group>"; };
+		632934F546DE37E6C2CB260A /* MCTRequestSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTRequestSummary.h; sourceTree = "<group>"; };
+		63293507B881B2F8EE5C53F2 /* MCTRequestSummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTRequestSummary.m; sourceTree = "<group>"; };
+		63293521EAA2B58B2F2B8806 /* MCTSettingsFieldCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MCTSettingsFieldCell.xib; sourceTree = "<group>"; };
+		6329361CA5DCC5DD1ABC95BE /* MCTDrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTDrawerViewController.m; sourceTree = "<group>"; };
+		6329366C4D0338D173A1E7A0 /* MCTStatusFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTStatusFooterView.m; sourceTree = "<group>"; };
+		632936BEBE4D9B3EA46CAF7D /* UIFont+Microchip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Microchip.m"; sourceTree = "<group>"; };
+		632936DED7CB7EFBABC5D6D7 /* MCTSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTSettingsViewController.h; sourceTree = "<group>"; };
+		632937145D8CF1520343D6F9 /* MCTSettingsSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTSettingsSwitchCell.m; sourceTree = "<group>"; };
+		632937CB48D52686DAC1774A /* MCTBluetoothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTBluetoothManager.h; sourceTree = "<group>"; };
+		632937F12451AC921FCF8F8D /* MCTBluetoothManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTBluetoothManager.m; sourceTree = "<group>"; };
+		632938C7B0998D27BF58AFFD /* MCTRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTRequest.m; sourceTree = "<group>"; };
+		632938F65176F7C4DB897036 /* MCTSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTSession.h; sourceTree = "<group>"; };
+		63293949D8A6CF99E296695C /* MCTSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTSession.m; sourceTree = "<group>"; };
+		6329394C619FF2F8E7FCEB81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Storyboard.storyboard; sourceTree = "<group>"; };
+		63293955D535C1F312CD0B6B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6329395D5A90973CDAFD0081 /* NSData+Microchip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Microchip.h"; sourceTree = "<group>"; };
+		63293994A0A888D15E825A62 /* MCTSettingsFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTSettingsFieldCell.m; sourceTree = "<group>"; };
+		632939AADD4C5D29C5603203 /* MCTDevicePotentiometerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MCTDevicePotentiometerCell.xib; sourceTree = "<group>"; };
+		63293A48811F01FCDBF823D5 /* MCTDeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTDeviceViewController.h; sourceTree = "<group>"; };
+		63293AAC140671D875138DFA /* MCTDeviceHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTDeviceHeaderView.m; sourceTree = "<group>"; };
+		63293ABAEE5A905A5908505E /* MCTConsoleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTConsoleViewController.m; sourceTree = "<group>"; };
+		63293ABF6BCA8AF457D066CF /* UIView+Microchip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Microchip.h"; sourceTree = "<group>"; };
+		63293AD98871B2D59EC9E996 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		63293B190143BCC2D34F09C1 /* MCTSettingsFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTSettingsFieldCell.h; sourceTree = "<group>"; };
+		63293B475C79AFFA4492A075 /* MCTConsoleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTConsoleCell.m; sourceTree = "<group>"; };
+		63293B936E0FB55E8D366B58 /* MCTCharacteristic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTCharacteristic.m; sourceTree = "<group>"; };
+		63293BB0E7AE9875CC02E8C1 /* MCTDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTDevice.h; sourceTree = "<group>"; };
+		63293BB685E66C2487A6E7E3 /* MCTDevicePotentiometerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTDevicePotentiometerCell.m; sourceTree = "<group>"; };
+		63293BDA5B3F2ACA404EEB7D /* MCTDeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTDeviceViewController.m; sourceTree = "<group>"; };
+		63293C51466055D8D6D48EA7 /* MCTConsoleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTConsoleViewController.h; sourceTree = "<group>"; };
+		63293C61C0FEB111B0E116FD /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		63293C7DB9C4F3193AB77D1D /* UIView+Microchip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Microchip.m"; sourceTree = "<group>"; };
+		63293CEF1313E420A91489A6 /* UIFont+Microchip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Microchip.h"; sourceTree = "<group>"; };
+		63293D02C1C4B31DDB9AC375 /* MCTDeviceButtonLEDHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MCTDeviceButtonLEDHeaderView.xib; sourceTree = "<group>"; };
+		63293D4372CEC5899DFB00B8 /* MCTConsoleMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTConsoleMonitor.h; sourceTree = "<group>"; };
+		63293D5AA4AD6EC0DC3907B9 /* MCTRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTRequest.h; sourceTree = "<group>"; };
+		63293D70829285511057798D /* MCTDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTDeviceManager.h; sourceTree = "<group>"; };
+		63293DE2E29911ECA9229673 /* device.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = device.json; sourceTree = "<group>"; };
+		63293DE698DE33F2514052EE /* MCTAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTAppearance.m; sourceTree = "<group>"; };
+		63293E4A98E6FA6557BCBBCE /* MCTAttributionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTAttributionView.m; sourceTree = "<group>"; };
+		63293E9CE7B0CBFC666ECAF8 /* MCTConsoleMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTConsoleMonitor.m; sourceTree = "<group>"; };
+		63293EB3C02E2A1807165E9B /* MCTStatusFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTStatusFooterView.h; sourceTree = "<group>"; };
+		63293F2AE15C5ACD4A0F3832 /* MCTAttributionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MCTAttributionView.xib; sourceTree = "<group>"; };
+		63293FCD7848C54C8E38E244 /* MCTSettingsSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTSettingsSwitchCell.h; sourceTree = "<group>"; };
+		63293FF72F7A5575B8BF7863 /* MCTDrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTDrawerViewController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28C57A991A5B3807008C7444 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28C57AB21A5B3807008C7444 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24F0679EB540006F175FF836 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		28C57A931A5B3807008C7444 = {
+			isa = PBXGroup;
+			children = (
+				28C57A9E1A5B3807008C7444 /* BLECM-DevKit */,
+				28C57AB81A5B3807008C7444 /* BLECM-DevKitTests */,
+				28C57A9D1A5B3807008C7444 /* Products */,
+				24F0679EB540006F175FF836 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		28C57A9D1A5B3807008C7444 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28C57A9C1A5B3807008C7444 /* BLECM.app */,
+				28C57AB51A5B3807008C7444 /* BLECM-DevKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28C57A9E1A5B3807008C7444 /* BLECM-DevKit */ = {
+			isa = PBXGroup;
+			children = (
+				28C57AA31A5B3807008C7444 /* MCTAppDelegate.h */,
+				28C57AA41A5B3807008C7444 /* MCTAppDelegate.m */,
+				28C57AAC1A5B3807008C7444 /* Images.xcassets */,
+				28C57A9F1A5B3807008C7444 /* Supporting Files */,
+				6329382325CD836B4B1B7406 /* Appearance */,
+				632934A895A1B19E13BD8DEA /* Data */,
+				63293184DD9AD1347E43F994 /* Device Manager */,
+				632937CF24880410BB26B9A1 /* Extensions */,
+				6329307B10AC98601ECDE173 /* Features */,
+				632930A24CAA00AF1AD9E30E /* Models */,
+				632932C380B589A0175BF225 /* Server API */,
+				2880031C1A64816200E878A7 /* Launch Screen.xib */,
+				632937BBDEAD241E7312EEA6 /* Analytics */,
+			);
+			path = "BLECM-DevKit";
+			sourceTree = "<group>";
+		};
+		28C57A9F1A5B3807008C7444 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				28C57AA01A5B3807008C7444 /* Info.plist */,
+				63293405E8D8E21F583A39EE /* Storyboard.storyboard */,
+				63293955D535C1F312CD0B6B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		28C57AB81A5B3807008C7444 /* BLECM-DevKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				28C57ABB1A5B3807008C7444 /* BLECM_DevKitTests.m */,
+				28C57AB91A5B3807008C7444 /* Supporting Files */,
+			);
+			path = "BLECM-DevKitTests";
+			sourceTree = "<group>";
+		};
+		28C57AB91A5B3807008C7444 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				28C57ABA1A5B3807008C7444 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6329307B10AC98601ECDE173 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				63293B6C27E049FDB747178F /* Console */,
+				632930941D64EA0E434FDE5B /* Settings */,
+				63293BC6463D4234AC44D731 /* Device HUD */,
+				632931F472738F4B9FE245D4 /* Navigation */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		632930941D64EA0E434FDE5B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				2848CD981A66F1FC00BC01F5 /* MCTSettingsHeaderView.h */,
+				2848CD991A66F1FC00BC01F5 /* MCTSettingsHeaderView.m */,
+				2848CD9B1A66F20F00BC01F5 /* MCTSettingsHeaderView.xib */,
+				63293162F0C6D34186248652 /* Cells */,
+				632937A514F5BC1A0622DC73 /* Supplemental Views */,
+				632936DED7CB7EFBABC5D6D7 /* MCTSettingsViewController.h */,
+				63293005F0B855555CF5CE51 /* MCTSettingsViewController.m */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		632930A24CAA00AF1AD9E30E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				63293BB0E7AE9875CC02E8C1 /* MCTDevice.h */,
+				6329314FECD94A208A87EDD0 /* MCTDevice.m */,
+				632938F65176F7C4DB897036 /* MCTSession.h */,
+				63293949D8A6CF99E296695C /* MCTSession.m */,
+				63293232250F57485A4B00C6 /* MCTCharacteristic.h */,
+				63293B936E0FB55E8D366B58 /* MCTCharacteristic.m */,
+				632934F546DE37E6C2CB260A /* MCTRequestSummary.h */,
+				63293507B881B2F8EE5C53F2 /* MCTRequestSummary.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		63293162F0C6D34186248652 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				63293B190143BCC2D34F09C1 /* MCTSettingsFieldCell.h */,
+				63293994A0A888D15E825A62 /* MCTSettingsFieldCell.m */,
+				63293FCD7848C54C8E38E244 /* MCTSettingsSwitchCell.h */,
+				632937145D8CF1520343D6F9 /* MCTSettingsSwitchCell.m */,
+				63293521EAA2B58B2F2B8806 /* MCTSettingsFieldCell.xib */,
+				632931EB0E0F4AEBD73D881D /* MCTSettingsSwitchCell.xib */,
+				2848CD911A65CA0800BC01F5 /* MCTNoPeripheralsCell.h */,
+				2848CD921A65CA0800BC01F5 /* MCTNoPeripheralsCell.m */,
+				2848CD931A65CA0800BC01F5 /* MCTNoPeripheralsCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		63293184DD9AD1347E43F994 /* Device Manager */ = {
+			isa = PBXGroup;
+			children = (
+				63293D70829285511057798D /* MCTDeviceManager.h */,
+				6329304921118C35CBDC7864 /* MCTDeviceManager.m */,
+				632937F12451AC921FCF8F8D /* MCTBluetoothManager.m */,
+				632937CB48D52686DAC1774A /* MCTBluetoothManager.h */,
+			);
+			path = "Device Manager";
+			sourceTree = "<group>";
+		};
+		632931F472738F4B9FE245D4 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				63293FF72F7A5575B8BF7863 /* MCTDrawerViewController.h */,
+				6329361CA5DCC5DD1ABC95BE /* MCTDrawerViewController.m */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		632932C380B589A0175BF225 /* Server API */ = {
+			isa = PBXGroup;
+			children = (
+				63293D5AA4AD6EC0DC3907B9 /* MCTRequest.h */,
+				632938C7B0998D27BF58AFFD /* MCTRequest.m */,
+				63293AD98871B2D59EC9E996 /* Reachability.h */,
+				63293C61C0FEB111B0E116FD /* Reachability.m */,
+			);
+			path = "Server API";
+			sourceTree = "<group>";
+		};
+		63293364ED3B2D49305703E4 /* Supplemental Views */ = {
+			isa = PBXGroup;
+			children = (
+				632932A7C953F80EEF610B37 /* MCTDeviceHeaderView.h */,
+				63293AAC140671D875138DFA /* MCTDeviceHeaderView.m */,
+				63293EB3C02E2A1807165E9B /* MCTStatusFooterView.h */,
+				6329366C4D0338D173A1E7A0 /* MCTStatusFooterView.m */,
+				6329321E7B815D7F30D68866 /* MCTStatusFooterView.xib */,
+				63293D02C1C4B31DDB9AC375 /* MCTDeviceButtonLEDHeaderView.xib */,
+				632934420652A35FE90B793B /* MCTDevicePotentiometerHeaderView.xib */,
+			);
+			path = "Supplemental Views";
+			sourceTree = "<group>";
+		};
+		632934A895A1B19E13BD8DEA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				63293DE2E29911ECA9229673 /* device.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		632937A514F5BC1A0622DC73 /* Supplemental Views */ = {
+			isa = PBXGroup;
+			children = (
+				63293106728AF04938E8FA31 /* MCTAttributionView.h */,
+				63293E4A98E6FA6557BCBBCE /* MCTAttributionView.m */,
+				63293F2AE15C5ACD4A0F3832 /* MCTAttributionView.xib */,
+			);
+			path = "Supplemental Views";
+			sourceTree = "<group>";
+		};
+		632937BBDEAD241E7312EEA6 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		632937CF24880410BB26B9A1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6329395D5A90973CDAFD0081 /* NSData+Microchip.h */,
+				63293403DB3E96D517F11D1B /* NSData+Microchip.m */,
+				63293CEF1313E420A91489A6 /* UIFont+Microchip.h */,
+				632936BEBE4D9B3EA46CAF7D /* UIFont+Microchip.m */,
+				63293ABF6BCA8AF457D066CF /* UIView+Microchip.h */,
+				63293C7DB9C4F3193AB77D1D /* UIView+Microchip.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6329382325CD836B4B1B7406 /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				63293118D176A69E1727EACE /* MCTAppearance.h */,
+				63293DE698DE33F2514052EE /* MCTAppearance.m */,
+			);
+			path = Appearance;
+			sourceTree = "<group>";
+		};
+		632939747E300685E742FBD1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				632934A331F55FFC96700614 /* MCTConsoleCell.h */,
+				63293B475C79AFFA4492A075 /* MCTConsoleCell.m */,
+				6329334C0B78F31515E53016 /* MCTConsoleCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		63293B6C27E049FDB747178F /* Console */ = {
+			isa = PBXGroup;
+			children = (
+				632939747E300685E742FBD1 /* Cells */,
+				63293D4372CEC5899DFB00B8 /* MCTConsoleMonitor.h */,
+				63293E9CE7B0CBFC666ECAF8 /* MCTConsoleMonitor.m */,
+				63293C51466055D8D6D48EA7 /* MCTConsoleViewController.h */,
+				63293ABAEE5A905A5908505E /* MCTConsoleViewController.m */,
+			);
+			path = Console;
+			sourceTree = "<group>";
+		};
+		63293BA37782ECBFB10B96A8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6329341EF09A93735C619304 /* MCTDeviceCell.h */,
+				6329340F9D4963E3022A2440 /* MCTDeviceCell.m */,
+				632932793FB7FB367C2FAE1D /* MCTDeviceButtonLEDCell.h */,
+				632933118ABCBAF5D00639F8 /* MCTDeviceButtonLEDCell.m */,
+				63293449E65636ADB2C49B3F /* MCTDeviceButtonLEDCell.xib */,
+				63293243B5D3C9C53FC4B065 /* MCTDevicePotentiometerCell.h */,
+				63293BB685E66C2487A6E7E3 /* MCTDevicePotentiometerCell.m */,
+				632939AADD4C5D29C5603203 /* MCTDevicePotentiometerCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		63293BC6463D4234AC44D731 /* Device HUD */ = {
+			isa = PBXGroup;
+			children = (
+				63293BA37782ECBFB10B96A8 /* Cells */,
+				63293364ED3B2D49305703E4 /* Supplemental Views */,
+				63293A48811F01FCDBF823D5 /* MCTDeviceViewController.h */,
+				63293BDA5B3F2ACA404EEB7D /* MCTDeviceViewController.m */,
+			);
+			path = "Device HUD";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28C57A9B1A5B3807008C7444 /* BLECM-DevKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28C57ABF1A5B3807008C7444 /* Build configuration list for PBXNativeTarget "BLECM-DevKit" */;
+			buildPhases = (
+				28C57A981A5B3807008C7444 /* Sources */,
+				28C57A991A5B3807008C7444 /* Frameworks */,
+				28C57A9A1A5B3807008C7444 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BLECM-DevKit";
+			productName = "BLECM-DevKit";
+			productReference = 28C57A9C1A5B3807008C7444 /* BLECM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		28C57AB41A5B3807008C7444 /* BLECM-DevKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28C57AC21A5B3807008C7444 /* Build configuration list for PBXNativeTarget "BLECM-DevKitTests" */;
+			buildPhases = (
+				28C57AB11A5B3807008C7444 /* Sources */,
+				28C57AB21A5B3807008C7444 /* Frameworks */,
+				28C57AB31A5B3807008C7444 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28C57AB71A5B3807008C7444 /* PBXTargetDependency */,
+			);
+			name = "BLECM-DevKitTests";
+			productName = "BLECM-DevKitTests";
+			productReference = 28C57AB51A5B3807008C7444 /* BLECM-DevKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28C57A941A5B3807008C7444 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Michael Lake";
+				TargetAttributes = {
+					28C57A9B1A5B3807008C7444 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					28C57AB41A5B3807008C7444 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 28C57A9B1A5B3807008C7444;
+					};
+				};
+			};
+			buildConfigurationList = 28C57A971A5B3807008C7444 /* Build configuration list for PBXProject "BLECM-DevKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28C57A931A5B3807008C7444;
+			productRefGroup = 28C57A9D1A5B3807008C7444 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28C57A9B1A5B3807008C7444 /* BLECM-DevKit */,
+				28C57AB41A5B3807008C7444 /* BLECM-DevKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28C57A9A1A5B3807008C7444 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28C57AAD1A5B3807008C7444 /* Images.xcassets in Resources */,
+				2848CD9C1A66F20F00BC01F5 /* MCTSettingsHeaderView.xib in Resources */,
+				63293017A20586406AE134C9 /* MCTConsoleCell.xib in Resources */,
+				63293018EB60EF87CA55A943 /* MCTSettingsFieldCell.xib in Resources */,
+				632930C6A1AEF4020204C02F /* MCTSettingsSwitchCell.xib in Resources */,
+				63293BA1806BC351AC0D184F /* MCTAttributionView.xib in Resources */,
+				63293F4DDED30935AD293E0E /* MCTDeviceButtonLEDCell.xib in Resources */,
+				632934BA872373B5B156F567 /* MCTDevicePotentiometerCell.xib in Resources */,
+				63293F32B4BAD0A634099FFA /* MCTStatusFooterView.xib in Resources */,
+				63293BDBA32640F3063EDF43 /* MCTDeviceButtonLEDHeaderView.xib in Resources */,
+				2848CD951A65CA0800BC01F5 /* MCTNoPeripheralsCell.xib in Resources */,
+				2880031D1A64816200E878A7 /* Launch Screen.xib in Resources */,
+				63293208C480A71A23A3AB0C /* MCTDevicePotentiometerHeaderView.xib in Resources */,
+				632932A1E07604A903D7FEFA /* device.json in Resources */,
+				632933F3F5FEEC7C06AAD1DC /* Storyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28C57AB31A5B3807008C7444 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28C57A981A5B3807008C7444 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28C57AA51A5B3807008C7444 /* MCTAppDelegate.m in Sources */,
+				63293DF672139826FD227354 /* MCTConsoleCell.m in Sources */,
+				63293001F2CBAA51F6248D78 /* MCTConsoleMonitor.m in Sources */,
+				6329382014283300721D29BB /* MCTConsoleViewController.m in Sources */,
+				63293B33789909FD347EE39F /* MCTSettingsFieldCell.m in Sources */,
+				63293B28900295276A59C327 /* MCTSettingsSwitchCell.m in Sources */,
+				632939733D17599045FEA7F6 /* MCTAttributionView.m in Sources */,
+				63293477F9C44AFB3AD9EADD /* MCTSettingsViewController.m in Sources */,
+				63293621E6502CD19158C55E /* MCTDeviceCell.m in Sources */,
+				2848CD9A1A66F1FC00BC01F5 /* MCTSettingsHeaderView.m in Sources */,
+				6329393856FD562E498C4391 /* MCTDeviceButtonLEDCell.m in Sources */,
+				632939CA5F2DF68E41AB8660 /* MCTDevicePotentiometerCell.m in Sources */,
+				63293ED918FC55D97D1F26DE /* MCTDeviceHeaderView.m in Sources */,
+				632936E811F52DFC1A6C1D02 /* MCTStatusFooterView.m in Sources */,
+				63293A2B31543796C9966E1E /* MCTDeviceViewController.m in Sources */,
+				632933F418620DC735EC7817 /* MCTDrawerViewController.m in Sources */,
+				632932FA1E2E4CBA3140A766 /* MCTDevice.m in Sources */,
+				63293589A1F06EDD27A45CED /* MCTSession.m in Sources */,
+				632939ECD4DCAD14F56763F8 /* MCTCharacteristic.m in Sources */,
+				63293DEEDF3974B4F21B4919 /* MCTRequestSummary.m in Sources */,
+				63293DCAF1B7D223C8B3F77F /* MCTRequest.m in Sources */,
+				63293410DD8554DCEFDAC8F7 /* Reachability.m in Sources */,
+				632931ECB1130158A73ABDA4 /* MCTAppearance.m in Sources */,
+				6329394684CCF8E21BD1EAFF /* MCTDeviceManager.m in Sources */,
+				63293E05F36BB6D0AB8C5187 /* NSData+Microchip.m in Sources */,
+				6329368E9DE7BBD326A6C9B5 /* UIFont+Microchip.m in Sources */,
+				63293AF3C1397B1D16C2FE31 /* UIView+Microchip.m in Sources */,
+				63293A5B11FF49DCDBFEE4EB /* main.m in Sources */,
+				2848CD941A65CA0800BC01F5 /* MCTNoPeripheralsCell.m in Sources */,
+				6329387185995242E0847EDB /* MCTBluetoothManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28C57AB11A5B3807008C7444 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28C57ABC1A5B3807008C7444 /* BLECM_DevKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28C57AB71A5B3807008C7444 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28C57A9B1A5B3807008C7444 /* BLECM-DevKit */;
+			targetProxy = 28C57AB61A5B3807008C7444 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		63293405E8D8E21F583A39EE /* Storyboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6329394C619FF2F8E7FCEB81 /* Base */,
+			);
+			name = Storyboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28C57ABD1A5B3807008C7444 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		28C57ABE1A5B3807008C7444 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		28C57AC01A5B3807008C7444 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "BLECM-DevKit/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = BLECM;
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+			};
+			name = Debug;
+		};
+		28C57AC11A5B3807008C7444 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "BLECM-DevKit/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = BLECM;
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+			};
+			name = Release;
+		};
+		28C57AC31A5B3807008C7444 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BLECM-DevKitTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLECM-DevKit.app/BLECM-DevKit";
+			};
+			name = Debug;
+		};
+		28C57AC41A5B3807008C7444 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BLECM-DevKitTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLECM-DevKit.app/BLECM-DevKit";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28C57A971A5B3807008C7444 /* Build configuration list for PBXProject "BLECM-DevKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28C57ABD1A5B3807008C7444 /* Debug */,
+				28C57ABE1A5B3807008C7444 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28C57ABF1A5B3807008C7444 /* Build configuration list for PBXNativeTarget "BLECM-DevKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28C57AC01A5B3807008C7444 /* Debug */,
+				28C57AC11A5B3807008C7444 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28C57AC21A5B3807008C7444 /* Build configuration list for PBXNativeTarget "BLECM-DevKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28C57AC31A5B3807008C7444 /* Debug */,
+				28C57AC41A5B3807008C7444 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28C57A941A5B3807008C7444 /* Project object */;
+}

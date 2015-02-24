@@ -1,0 +1,21 @@
+{
+  "mchp": {
+    "device": {
+      "device-type": 2,
+      "uuid": "000000000000",
+      "status": 200,
+      "message": "Request has been accepted and processed successfully",
+      "data": {
+        "button1": false,
+        "button2": false,
+        "button3": false,
+        "button4": false,
+        "led1": true,
+        "led2": false,
+        "led3": true,
+        "led4": false,
+        "potentiometer": 132
+      }
+    }
+  }
+}

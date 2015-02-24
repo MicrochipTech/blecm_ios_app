@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="KGk-i7-Jjw" customClass="MCTNoPeripheralsCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="There are no devices within range." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zIl-zj-Uw2">
+                        <rect key="frame" x="31" y="21" width="258" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.41623263888888884" green="0.41623263888888884" blue="0.41623263888888884" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" misplaced="YES" text="Please make sure your Dev Kit is turned on." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ek5-oa-8zQ">
+                        <rect key="frame" x="-7" y="37" width="335" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.41623263888888884" green="0.41623263888888884" blue="0.41623263888888884" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerX" secondItem="zIl-zj-Uw2" secondAttribute="centerX" id="KBm-sZ-Vc0"/>
+                    <constraint firstItem="Ek5-oa-8zQ" firstAttribute="top" secondItem="zIl-zj-Uw2" secondAttribute="bottom" constant="-5" id="TtI-tQ-kwV"/>
+                    <constraint firstItem="zIl-zj-Uw2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="13" id="Tzv-ZC-RVR"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Ek5-oa-8zQ" secondAttribute="bottom" constant="13.5" id="Xu2-wg-HNt"/>
+                    <constraint firstAttribute="centerX" secondItem="Ek5-oa-8zQ" secondAttribute="centerX" constant="-0.5" id="otf-11-Myy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="233" y="321"/>
+        </tableViewCell>
+    </objects>
+</document>
